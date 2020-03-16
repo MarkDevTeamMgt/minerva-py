@@ -7,8 +7,7 @@ import pytest
 def run_all(argv=None):
     # always insert coverage when running tests through setup.py
     if argv is None:
-        argv = ['--cov', 'tests', '--verbose', '--junitxml',
-                'junit.xml', '--cov-report', 'xml']
+        argv = ['--verbose', '--junitxml', 'junit.xml', '--variables', 'tests/variables.yaml']
     else:
         argv = argv[1:]
 

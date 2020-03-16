@@ -1,8 +1,8 @@
 from minerva import Client
 
 
-def test_fetch_data():
-    client = Client(user='test@moyi-tech.org', password='moyi1234')
+def test_fetch_data(variables):
+    client = Client(user=variables['user'], password=variables['password'])
     data = client.fetch(
         'marketdata?sector=information_technology&begin=2020-01-10&end=2020-02-20&start=0&size=20')
 

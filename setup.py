@@ -10,8 +10,10 @@ install_requires = [
 ]
 
 tests_require = [
+    'pyyaml',
     'pytest',
-    'pytest-cov'
+    'pytest-variables',
+    'pytest-variables[yaml]'
 ]
 
 setup(
