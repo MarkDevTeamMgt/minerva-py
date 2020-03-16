@@ -1,0 +1,14 @@
+.vscode/
+__pycache__/
+/env/
+/build/
+/dist/
+/*.egg-info/
+.pytest_cache
+.coverage
+coverage.xml
+junit.xml
+
+
+*.py[cod]
+*$py.class
